@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <style name="EstiloTituloSeccionPerfil">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#2E7D32</item> <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="EstiloContenedorOpcionesPerfil">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+
+    <style name="EstiloOpcionPerfil">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">?attr/selectableItemBackground</item> </style>
+
+    <style name="EstiloIconoOpcionPerfil">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:tint">#555555</item> <item name="android:layout_marginEnd">16dp</item>
+    </style>
+
+    <style name="EstiloTextoOpcionPerfil">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="EstiloFlechaOpcionPerfil">
+        <item name="android:layout_width">16dp</item>
+        <item name="android:layout_height">16dp</item>
+        <item name="android:src">@drawable/ic_chevron_right</item>
+        <item name="android:tint">#AAAAAA</item> </style>
+
+    <style name="EstiloSeparadorOpcionPerfil">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#EEEEEE</item> <item name="android:layout_marginStart">56dp</item> </style>
+
+    <style name="EstiloEspacioEntreSecciones">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">16dp</item>
+    </style>
+
+    <style name="PerfilOptionStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">15dp</item>
+
+        <!-- CORRECCIÓN DE API 26: Reemplazo de paddingHorizontal -->
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+
+        <!-- CORRECCIÓN DE API 26: Reemplazo de paddingVertical -->
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:drawableEnd">@drawable/ic_arrow_right</item>
+    </style>
+
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="0dp"> <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:gravity="center_vertical">
+
+    <FrameLayout
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/circulo_gris_claro"> <ImageView
+        android:id="@+id/icono_categoria"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_comida"
+        android:layout_gravity="center"
+        app:tint="@android:color/black" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:id="@+id/texto_categoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comida"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/texto_hora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:30 AM"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/texto_monto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-S/ 25.00"
+        android:textSize="16sp"
+        android:textColor="#E53935" android:textStyle="bold" />
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>

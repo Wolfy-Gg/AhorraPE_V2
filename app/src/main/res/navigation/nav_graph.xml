@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+
+    app:startDestination="@id/aprenderFragment">
+
+    <fragment
+        android:id="@+id/aprenderFragment"
+        android:name="com.example.ahorra.fragmentos.AprenderFragment"
+        android:label="Aprender"
+        tools:layout="@layout/fragment_aprender" >
+        <action
+            android:id="@+id/action_aprenderFragment_to_leccionFragment"
+            app:destination="@id/leccionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/leccionFragment"
+        android:name="com.example.ahorra.fragmentos.LeccionFragment"
+        android:label="Lección"
+        tools:layout="@layout/fragment_leccion" >
+        <action
+            android:id="@+id/action_leccionFragment_to_aprenderFragment2"
+            app:destination="@id/aprenderFragment" />
+    </fragment>
+
+</navigation>

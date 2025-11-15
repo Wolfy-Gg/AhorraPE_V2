@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_horizontal"
+    android:background="@android:color/white"
+    tools:context=".fragmentos.PerfilFragment">
+
+    <TextView
+        android:id="@+id/lblTituloPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Configuración de Perfil"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#004D40"
+        android:layout_marginBottom="32dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/lblNombreUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cargando Nombre..."
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/lblEmailUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cargando Email..."
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/lblSaldoTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saldo Total: S/. 0.00"
+            android:textSize="16sp"
+            android:textColor="#004D40"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:background="@drawable/background_saldo" /> </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:layout_marginVertical="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Utiliza el botón de abajo para cerrar tu sesión de forma segura."
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:backgroundTint="#D32F2F"
+        android:paddingVertical="12dp"
+        android:textStyle="bold"
+        android:text="CERRAR SESIÓN"/>
+
+</LinearLayout>

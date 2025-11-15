@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".fragmentos.LeccionFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_leccion"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="Lección 1.1: Identificando el Ga..."
+        app:navigationIcon="@drawable/ic_arrow_back" app:menu="@menu/leccion_menu" /> <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:clipToPadding="false"> <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"> <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Lección 1.1: Identificando el Gasto Hormiga"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:textColor="@android:color/black"
+    android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lectura: 5 min"
+            app:chipBackgroundColor="#F0F0F0"
+            android:layout_marginEnd="8dp"/>
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categoría: Ahorro Básico"
+            app:chipBackgroundColor="#F0F0F0"/>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        android:layout_marginBottom="16dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/hormigas" android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="El 'gasto hormiga' se refiere a esos pequeños gastos que hacemos casi a diario sin darnos cuenta, pero que al sumarlos, representan una cantidad significativa de nuestro dinero a fin de mes. Identificarlos es el primer paso para tomar el control de tus finanzas."
+        android:textSize="16sp"
+        android:lineHeight="24sp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estos gastos suelen pasar desapercibidos porque son de bajo monto. Un café por la mañana, una botella de agua, una galleta por la tarde. Individualmente, no parecen mucho, pero la suma puede ser sorprendente."
+        android:textSize="16sp"
+        android:lineHeight="24sp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ejemplos comunes de gastos hormiga:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cafés o bebidas compradas fuera de casa."
+            android:textSize="16sp"
+            android:drawableStart="@drawable/bullet_point"
+            android:drawablePadding="8dp"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Snacks, dulces o antojos impulsivos."
+            android:textSize="16sp"
+            android:drawableStart="@drawable/bullet_point"
+            android:drawablePadding="8dp"
+            android:layout_marginBottom="4dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/highlight_background"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¡Aplica esto ahora!"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Revisa tus últimos 3 días de gastos en la app y encuentra al menos un gasto hormiga. ¡Tómale nota!"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="El objetivo no es eliminarlos por completo si te traen felicidad, sino ser consciente de ellos..."
+        android:textSize="16sp"
+        android:lineHeight="24sp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Un método efectivo es llevar un registro detallado de todos tus gastos durante una semana..."
+        android:textSize="16sp"
+        android:lineHeight="24sp"
+        android:layout_marginBottom="16dp"/>
+
+</LinearLayout>
+</ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:elevation="4dp"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Progreso"
+                android:layout_alignParentStart="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100% leído"
+                android:layout_alignParentEnd="true"
+                android:textStyle="bold"
+                android:textColor="#008800"/> </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="100"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btn_siguiente_leccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lección Siguiente"
+            android:padding="12dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
