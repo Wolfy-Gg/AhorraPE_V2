@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_margin="10dp"
-        android:weightSum="5">
+        android:weightSum="6">
 
         <!-- INICIO -->
         <LinearLayout
@@ -32,7 +32,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Inicio"
+                android:text="INICIO"
                 android:textSize="12sp"
                 android:textColor="#000000"/>
         </LinearLayout>
@@ -56,7 +56,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Metas"
+                android:text="METAS"
                 android:textSize="12sp"
                 android:textColor="#000000"/>
         </LinearLayout>
@@ -80,7 +80,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Aprender"
+                android:text="APRENDER"
                 android:textSize="12sp"
                 android:textColor="#000000"/>
         </LinearLayout>
@@ -104,7 +104,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Historial"
+                android:text="HISTORIAL"
                 android:textSize="12sp"
                 android:textColor="#000000"/>
         </LinearLayout>
@@ -123,12 +123,36 @@
                 android:layout_height="33dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="@string/Perfil"
-                android:src="@drawable/perfil"/>
+                android:src="@drawable/editar"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Perfil"
+                android:text="PERFIL"
+                android:textSize="12sp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <!-- MAPA -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/frgMenImbMapa"
+                android:layout_width="40dp"
+                android:layout_height="33dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/Mapa"
+                android:src="@drawable/ubicaciones"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Mapa"
                 android:textSize="12sp"
                 android:textColor="#000000"/>
         </LinearLayout>

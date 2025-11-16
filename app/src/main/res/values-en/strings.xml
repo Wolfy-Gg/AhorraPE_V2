@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SaveUp</string>
+    <string name="carLblInicio">Loading ...</string>
+    <string name="sesTxtCorreo">Email</string>
+    <string name="sesTxtClave">Password</string>
+    <string name="sesChkRecordar">Remember me</string>
+    <string name="sesBtnIngresar">Log In</string>
+    <string name="sesBtnSalir">Log Out</string>
+    <string name="sesLblRegistro">Sign Up</string>
+    <string name="regTxtDni">ID Number</string>
+    <string name="regTxtNombre">First Name</string>
+    <string name="regTxtApellido">Last Name</string>
+    <string name="regBtnCamara">Camera</string>
+    <string name="regTxtFechaNac">Date of Birth</string>
+    <string name="regLblTitulo">REGISTRATION</string>
+    <string name="lblSexo">Select your gender</string>
+    <string name="regRbtNoDefinido">Prefer not to say</string>
+    <string name="regRbtMasculino">Male</string>
+    <string name="regRbtFemenino">Female</string>
+    <string name="regTxtCorreo">Email</string>
+    <string name="regTxtClave">Password</string>
+    <string name="regTxtClave2">Confirm Password</string>
+    <string name="lblDistrito">District:</string>
+    <string name="regChkTerminos">Terms and Conditions</string>
+    <string name="regBtnCrear">Create</string>
+    <string name="regBtnRegresar">Back</string>
+
+    <!-- ADVERTENCIA: Valores de moneda hardcodeados.
+         Estos se dejaron como estaban. Idealmente, deberías usar placeholders.
+         Ej: <string name="txtSaldo">Balance: %s</string> y formatearlo en Java. -->
+    <string name="txtSaldo">S/ 1250.00</string>
+    <string name="txtIngresos">S/ 2500.00</string>
+    <string name="txtGastos">S/ 1250.00</string>
+    <string name="txtPorcentaje">60%</string>
+    <string name="txtInicio">S/600.00</string>
+    <string name="txtFinal">S/1000.00</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="RegGasBtnGasto">Expense</string>
+    <string name="RegGasBtnIngreso">Income</string>
+    <string name="txRegistroGastos">S/150.00</string>
+    <string name="RegGasBtnRegistrarGasto">Register Expense</string>
+    <string name="txRegistroIngresos">S/1000.00</string>
+    <string name="RegGasBtnRegistrarIngreso">Register Income</string>
+    <string name="txtResumenAhorros">S/1250.00</string>
+    <string name="BtnCrearNuevaMeta">+ Create New Goal</string>
+    <string name="inicio">Home</string>
+    <string name="metas">Goals</string>
+    <string name="aprender">Learn</string>
+    <string name="historial">History</string>
+    <string name="abrir_metas">+</string>
+    <string name="txtLblPreferencias">Preferences</string>
+    <string name="bieLblSaludo">Welcome</string>
+    <string name="Progreso_perol">35% of academy completed</string>
+    <string name="HistTxtBusqueda">Search transaction...</string>
+    <string name="Perfil">Profile</string>
+
+    <string name="bio_titulo">Biometric Log In</string>
+    <string name="bio_subtitulo">Log in using your fingerprint</string>
+    <string name="bio_boton_negativo">Use password</string>
+    <string name="bio_error_no_hardware">This device does not have a fingerprint sensor</string>
+    <string name="bio_error_no_registradas">No fingerprints enrolled. Please enroll one in Settings.</string>
+    <string name="bio_exito">Authentication successful</string>
+    <string name="bio_fallo">Fingerprint not recognized</string>
+    <string name="bio_error">Authentication error: %1$s</string>
+    <string name="bio_error_no_sesion">Log in with your password at least once to enable fingerprint.</string>
+
+    <!-- Arrays para los Spinners de Preferencias -->
+    <string-array name="idiomas_nombres">
+        <item>Español</item>
+        <item>English</item>
+    </string-array>
+
+    <string-array name="idiomas_codigos">
+        <item>es</item> <!-- Code for Spanish -->
+        <item>en</item> <!-- Code for English -->
+    </string-array>
+
+    <string-array name="monedas_array">
+        <item>PEN - Peruvian Sol</item>
+        <item>USD - US Dollar</item>
+        <item>EUR - Euro</item>
+    </string-array>
+</resources>

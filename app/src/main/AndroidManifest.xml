@@ -2,8 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- Permisos existentes -->
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permisos agregados para Preferencias -->
+    <!-- Permiso para Notificaciones (Obligatorio en API 33+) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- Permiso para Ubicación (Fina es más precisa) -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- Permiso para Ubicación (Coarse es menos precisa, pero a veces útil como fallback) -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -15,6 +21,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ahorra"
         android:usesCleartextTraffic="true">
+
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCdxeT7360BO4VO0dhdzNCY-BVw3TN0css" />
 
         <activity
             android:name=".actividades.FragmentActivity"

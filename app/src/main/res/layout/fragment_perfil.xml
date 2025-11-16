@@ -1,84 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp"
-    android:gravity="center_horizontal"
-    android:background="@android:color/white"
-    tools:context=".fragmentos.PerfilFragment">
+    android:background="#F5F5F5" tools:context=".fragmentos.PerfilFragment">
 
-    <TextView
-        android:id="@+id/lblTituloPerfil"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Configuración de Perfil"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="#004D40"
-        android:layout_marginBottom="32dp"/>
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_perfil"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#2E7D32" app:title="Mi Perfil y Configuración"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:navigationIconTint="@android:color/white" />
 
-    <LinearLayout
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"> <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:gravity="center_horizontal"
-        android:paddingBottom="20dp">
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
 
         <TextView
-            android:id="@+id/lblNombreUsuario"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cargando Nombre..."
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="@android:color/black"
-            android:layout_marginBottom="8dp"/>
+            style="@style/EstiloTituloSeccionPerfil"
+            android:text="Datos Personales y Cuenta"/>
+
+        <LinearLayout
+            style="@style/EstiloContenedorOpcionesPerfil">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:id="@+id/img_avatar"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_avatar_placeholder" android:layout_marginEnd="16dp"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/txt_nombre_usuario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Usuario Ejemplo"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/txt_email_usuario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="usuario.ejemplo@email.com"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/btn_editar_perfil"
+                    style="@style/EstiloFlechaOpcionPerfil"
+                    android:src="@drawable/ic_edit" /> </LinearLayout>
+
+            <View style="@style/EstiloSeparadorOpcionPerfil"/>
+
+            <LinearLayout
+                android:id="@+id/opcion_cambiar_contrasena"
+                style="@style/EstiloOpcionPerfil">
+                <ImageView style="@style/EstiloIconoOpcionPerfil" android:src="@drawable/ic_refresh" />
+                <TextView style="@style/EstiloTextoOpcionPerfil" android:text="Cambiar Contraseña" />
+                <ImageView style="@style/EstiloFlechaOpcionPerfil" />
+            </LinearLayout>
+
+            <View style="@style/EstiloSeparadorOpcionPerfil"/>
+
+            <LinearLayout
+                android:id="@+id/opcion_metodos_registro"
+                style="@style/EstiloOpcionPerfil">
+                <ImageView style="@style/EstiloIconoOpcionPerfil" android:src="@drawable/ic_list" />
+                <TextView style="@style/EstiloTextoOpcionPerfil" android:text="Métodos de Registro" />
+                <ImageView style="@style/EstiloFlechaOpcionPerfil" />
+            </LinearLayout>
+
+            <View style="@style/EstiloSeparadorOpcionPerfil"/>
+
+            <LinearLayout
+                android:id="@+id/opcion_eliminar_cuenta"
+                style="@style/EstiloOpcionPerfil">
+                <ImageView style="@style/EstiloIconoOpcionPerfil" android:src="@drawable/ic_delete" app:tint="#C62828"/> <TextView style="@style/EstiloTextoOpcionPerfil" android:text="Eliminar Cuenta" android:textColor="#C62828"/> <ImageView style="@style/EstiloFlechaOpcionPerfil" />
+            </LinearLayout>
+        </LinearLayout> <Space style="@style/EstiloEspacioEntreSecciones"/>
 
         <TextView
-            android:id="@+id/lblEmailUsuario"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cargando Email..."
-            android:textSize="14sp"
-            android:textColor="#666666"
-            android:layout_marginBottom="16dp"/>
+            style="@style/EstiloTituloSeccionPerfil"
+            android:text="Seguridad y Datos Personales"/>
+
+        <LinearLayout
+            style="@style/EstiloContenedorOpcionesPerfil">
+
+            <LinearLayout
+                android:id="@+id/opcion_datos_encriptados"
+                style="@style/EstiloOpcionPerfil"
+                android:clickable="false"
+                android:focusable="false"
+                android:background="@android:color/white"> <ImageView style="@style/EstiloIconoOpcionPerfil" android:src="@drawable/ic_security" app:tint="#2E7D32"/> <TextView style="@style/EstiloTextoOpcionPerfil" android:text="Datos Encriptados" android:textColor="#2E7D32"/> </LinearLayout>
+
+            <View style="@style/EstiloSeparadorOpcionPerfil"/>
+
+            <LinearLayout
+                android:id="@+id/opcion_politica_privacidad"
+                style="@style/EstiloOpcionPerfil">
+                <ImageView style="@style/EstiloIconoOpcionPerfil" android:src="@drawable/ic_lock" />
+                <TextView style="@style/EstiloTextoOpcionPerfil" android:text="Política de Privacidad" />
+                <ImageView style="@style/EstiloFlechaOpcionPerfil" />
+            </LinearLayout>
+
+            <View style="@style/EstiloSeparadorOpcionPerfil"/>
+
+            <LinearLayout
+                android:id="@+id/opcion_terminos"
+                style="@style/EstiloOpcionPerfil">
+                <ImageView style="@style/EstiloIconoOpcionPerfil" android:src="@drawable/ic_description" />
+                <TextView style="@style/EstiloTextoOpcionPerfil" android:text="Términos y Condiciones" />
+                <ImageView style="@style/EstiloFlechaOpcionPerfil" />
+            </LinearLayout>
+
+            <View style="@style/EstiloSeparadorOpcionPerfil"/>
+
+            <LinearLayout
+                android:id="@+id/opcion_preferencias"
+                style="@style/EstiloOpcionPerfil">
+                <ImageView style="@style/EstiloIconoOpcionPerfil" android:src="@drawable/ic_tune" />
+                <TextView style="@style/EstiloTextoOpcionPerfil" android:text="Preferencias" />
+                <ImageView style="@style/EstiloFlechaOpcionPerfil" />
+            </LinearLayout>
+        </LinearLayout> <Space style="@style/EstiloEspacioEntreSecciones"/>
 
         <TextView
-            android:id="@+id/lblSaldoTotal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Saldo Total: S/. 0.00"
-            android:textSize="16sp"
-            android:textColor="#004D40"
-            android:textStyle="bold"
-            android:padding="8dp"
-            android:background="@drawable/background_saldo" /> </LinearLayout>
+            style="@style/EstiloTituloSeccionPerfil"
+            android:text="Ayuda y Soporte"/>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#CCCCCC"
-        android:layout_marginVertical="20dp"/>
+        <LinearLayout
+            style="@style/EstiloContenedorOpcionesPerfil">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Utiliza el botón de abajo para cerrar tu sesión de forma segura."
-        android:textSize="14sp"
-        android:textColor="#666666"
-        android:layout_marginBottom="50dp"
-        android:gravity="center"/>
+            <LinearLayout
+                android:id="@+id/opcion_sugerencias"
+                style="@style/EstiloOpcionPerfil">
+                <ImageView style="@style/EstiloIconoOpcionPerfil" android:src="@drawable/ic_chat" />
+                <TextView style="@style/EstiloTextoOpcionPerfil" android:text="Enviar Sugerencias/Reportar Error" />
+                <ImageView style="@style/EstiloFlechaOpcionPerfil" />
+            </LinearLayout>
+        </LinearLayout> </LinearLayout> </ScrollView>
 
     <Button
-        android:id="@+id/btnCerrarSesion"
+        android:id="@+id/btn_cerrar_sesion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="40dp"
-        android:backgroundTint="#D32F2F"
-        android:paddingVertical="12dp"
-        android:textStyle="bold"
-        android:text="CERRAR SESIÓN"/>
+        android:text="Cerrar Sesión"
+        android:backgroundTint="#C62828" android:textColor="@android:color/white"
+        android:layout_margin="16dp"/>
 
 </LinearLayout>

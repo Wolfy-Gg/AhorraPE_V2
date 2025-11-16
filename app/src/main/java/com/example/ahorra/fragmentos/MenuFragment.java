@@ -23,7 +23,7 @@ import com.example.ahorra.clases.Menu;
  */
 public class MenuFragment extends Fragment {
 
-    private final static int BOTONES[]= {R.id.frgMenImbInicio, R.id.frgMenImbMetas, R.id.frgMenImbAprender, R.id.frgMenImbHistorial};
+    private final static int BOTONES[]= {R.id.frgMenImbInicio, R.id.frgMenImbMetas, R.id.frgMenImbAprender, R.id.frgMenImbHistorial, R.id.frgMenImbPerfil,R.id.frgMenImbMapa};
 
 
     // TODO: Rename parameter arguments, choose names that match

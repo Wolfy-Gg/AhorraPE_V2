@@ -27,6 +27,7 @@ import com.example.ahorra.clases.Menu;
 import com.example.ahorra.fragmentos.AprenderFragment;
 import com.example.ahorra.fragmentos.HistorialFragment;
 import com.example.ahorra.fragmentos.LeccionFragment;
+import com.example.ahorra.fragmentos.MapasFragment;
 import com.example.ahorra.fragmentos.MetasFragment;
 import com.example.ahorra.fragmentos.Pantalla_PrincipalFragment;
 import com.example.ahorra.fragmentos.PerfilFragment;
@@ -72,12 +73,13 @@ public class PrincipalActivity extends AppCompatActivity
         // ========================================================
 
         // prepara fragments
-        fragments = new Fragment[5];
+        fragments = new Fragment[6];
         fragments[0] = new Pantalla_PrincipalFragment(); // Home/Dashboard
         fragments[1] = new MetasFragment();
         fragments[2] = new AprenderFragment();
         fragments[3] = new HistorialFragment();
-        fragments[4] = new PerfilFragment(); // Contiene la opción de cerrar sesión
+        fragments[4] = new PerfilFragment();
+        fragments[5] = new MapasFragment(); // Contiene la opción de cerrar sesión
 
         int id = getIntent().getIntExtra("id", 0);
         onClickMenu(id); // Carga el fragment inicial (0 es el predeterminado si no se pasa 'id')

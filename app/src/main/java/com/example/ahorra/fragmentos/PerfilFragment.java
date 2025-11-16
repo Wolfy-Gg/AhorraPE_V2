@@ -48,10 +48,10 @@ public class PerfilFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_perfil, container, false);
 
-        // 1. Inicializar Vistas
-        lblNombreUsuario = view.findViewById(R.id.lblNombreUsuario);
-        lblEmailUsuario = view.findViewById(R.id.lblEmailUsuario);
-        btnCerrarSesion = view.findViewById(R.id.btnCerrarSesion);
+        // ... en tu PerfilFragment.java ...
+        TextView nombreUsuario = view.findViewById(R.id.txt_nombre_usuario); // ID corregido
+        TextView emailUsuario = view.findViewById(R.id.txt_email_usuario);  // ID corregido
+        Button botonCerrar = view.findViewById(R.id.btn_cerrar_sesion);   // ID corregido
 
         // **IMPORTANTE**: Asegúrate de añadir un TextView con este ID en fragment_perfil.xml
         // lblSaldoTotal = view.findViewById(R.id.lblSaldoTotal);

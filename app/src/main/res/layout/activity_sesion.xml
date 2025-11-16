@@ -50,31 +50,54 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="50dp"
             android:text="@string/sesChkRecordar"/>
+
+        <!--
+        ====================
+        INICIO DE LA MODIFICACIÓN
+        ====================
+        He reemplazado tu LinearLayout de botones "Ingresar" y "Salir"
+        por este nuevo LinearLayout que incluye el botón de huella.
+
+        También he mantenido tus márgenes y el estilo de tu botón.
+        -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginVertical="10dp"
-            android:gravity="center_horizontal">
+            android:layout_marginHorizontal="50dp"
+            android:gravity="center_vertical">
+
+            <!-- Botón de Login (adaptado a tu estilo) -->
             <Button
                 android:id="@+id/sesBtnIngresar"
-                android:layout_width="120dp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/sesBtnIngresar"
-                android:layout_marginRight="15dp"
+                android:padding="12dp"
                 android:backgroundTint="@color/white"
                 android:textColor="@color/black"
                 android:textAllCaps="false"/>
-            <Button
-                android:id="@+id/sesBtnSalir"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:text="@string/sesBtnSalir"
-                android:layout_marginLeft="15dp"
-                android:backgroundTint="@color/white"
-                android:textColor="@color/black"
-                android:textAllCaps="false"/>
+
+            <!-- BOTÓN NUEVO: Huella -->
+            <ImageButton
+                android:id="@+id/btn_ingresar_huella"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_fingerprint"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginStart="16dp"
+                android:contentDescription="Ingresar con huella"
+                app:tint="@color/purple_500" /> <!-- Asegúrate de tener este color -->
+
         </LinearLayout>
+        <!--
+        ====================
+        FIN DE LA MODIFICACIÓN
+        ====================
+        -->
+
         <TextView
             android:id="@+id/sesLblRegistro"
             android:layout_width="match_parent"

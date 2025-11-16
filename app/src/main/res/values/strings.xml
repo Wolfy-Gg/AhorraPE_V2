@@ -50,4 +50,32 @@
     <string name="Progreso_perol">35% de la academia completada</string>
     <string name="HistTxtBusqueda">Buscar transacción...</string>
     <string name="Perfil">Perfil</string>
+    <string name="bio_titulo">Biometric Log In</string>
+    <string name="bio_subtitulo">Log in using your fingerprint</string>
+    <string name="bio_boton_negativo">Use password</string>
+    <string name="bio_error_no_hardware">This device does not have a fingerprint sensor</string>
+    <string name="bio_error_no_registradas">No fingerprints enrolled. Please enroll one in Settings.</string>
+    <string name="bio_exito">Authentication successful</string>
+    <string name="bio_fallo">Fingerprint not recognized</string>
+    <string name="bio_error">Authentication error: %1$s</string>
+    <string name="bio_error_no_sesion">Log in with your password at least once to enable fingerprint.</string>
+    <string name="Mapa">MAPA</string>
+
+
+    <!-- Arrays para los Spinners de Preferencias -->
+    <string-array name="idiomas_nombres">
+        <item>Español</item>
+        <item>English</item>
+    </string-array>
+
+    <string-array name="idiomas_codigos">
+        <item>es</item> <!-- Código para Español -->
+        <item>en</item> <!-- Código para Inglés -->
+    </string-array>
+
+    <string-array name="monedas_array">
+        <item>PEN - Sol Peruano</item>
+        <item>USD - Dólar Americano</item>
+        <item>EUR - Euro</item>
+    </string-array>
 </resources>
